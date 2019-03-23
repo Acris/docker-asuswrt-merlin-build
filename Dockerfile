@@ -16,6 +16,7 @@ RUN set -ex \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
+    && chmod +x /root/download.sh \
     && chmod +x /root/env/*.sh
 
 CMD ["bash"]
