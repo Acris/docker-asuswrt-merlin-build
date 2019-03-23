@@ -17,6 +17,8 @@ RUN set -ex \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
     && chmod +x /root/download.sh \
-    && chmod +x /root/env/*.sh
+    && chmod +x /root/env/*.sh \
+    && cd /root \
+    && git clone https://github.com/RMerl/am-toolchains.git
 
 CMD ["bash"]
