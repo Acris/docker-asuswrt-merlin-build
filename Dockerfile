@@ -2,8 +2,7 @@ FROM debian:jessie
 
 LABEL maintainer="acrisliu@gmail.com"
 
-COPY download.sh /root/download.sh
-COPY env.sh /root/env.sh
+ADD env /root
 
 RUN set -ex \
     && dpkg --add-architecture i386 \
@@ -16,7 +15,6 @@ RUN set -ex \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
-    && chmod +x /root/download.sh \
-    && chmod +x /root/env.sh
+    && chmod +x /root/env/*.sh
 
 CMD ["bash"]
