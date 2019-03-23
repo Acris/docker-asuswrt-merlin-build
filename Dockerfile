@@ -2,6 +2,7 @@ FROM debian:jessie
 
 LABEL maintainer="acrisliu@gmail.com"
 
+COPY download.sh /root/download.sh
 COPY build.sh /root/build.sh
 
 RUN set -ex \
@@ -15,6 +16,7 @@ RUN set -ex \
     && apt autoremove -y \
     && apt autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
+    && chmod +x /root/download.sh \
     && chmod +x /root/build.sh
 
 CMD ["bash"]
