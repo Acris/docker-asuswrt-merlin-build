@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM debian:stretch-slim
 
 LABEL maintainer="acrisliu@gmail.com"
 
