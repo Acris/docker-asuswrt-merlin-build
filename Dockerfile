@@ -3,7 +3,7 @@ FROM debian:jessie
 LABEL maintainer="acrisliu@gmail.com"
 
 ADD download.sh /root/download.sh
-ADD env /root
+ADD env /root/env
 
 RUN set -ex \
     && dpkg --add-architecture i386 \
