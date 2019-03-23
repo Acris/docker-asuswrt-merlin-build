@@ -2,6 +2,7 @@ FROM debian:jessie
 
 LABEL maintainer="acrisliu@gmail.com"
 
+ADD download.sh /root/download.sh
 ADD env /root
 
 RUN set -ex \
