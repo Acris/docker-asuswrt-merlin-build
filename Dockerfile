@@ -3,7 +3,7 @@ FROM debian:jessie
 LABEL maintainer="acrisliu@gmail.com"
 
 COPY download.sh /root/download.sh
-COPY build.sh /root/build.sh
+COPY env.sh /root/env.sh
 
 RUN set -ex \
     && dpkg --add-architecture i386 \
@@ -17,6 +17,6 @@ RUN set -ex \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
     && chmod +x /root/download.sh \
-    && chmod +x /root/build.sh
+    && chmod +x /root/env.sh
 
 CMD ["bash"]
