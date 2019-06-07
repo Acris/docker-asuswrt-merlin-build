@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ASUSWRT_MERLIN_VERSION=384.11
+ASUSWRT_MERLIN_VERSION=384.11_2
 
 cd /tmp
 wget https://github.com/RMerl/asuswrt-merlin.ng/archive/${ASUSWRT_MERLIN_VERSION}.tar.gz
