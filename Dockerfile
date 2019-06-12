@@ -8,7 +8,7 @@ RUN set -ex \
     && dpkg --add-architecture i386 \
     && apt-get update \
     && apt-get install --no-install-recommends -y \
-       wget git nano vim upx-ucl \
+       ca-certificates wget git nano vim \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
