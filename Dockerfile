@@ -7,7 +7,7 @@ ADD env /root/env
 RUN set -ex \
     && dpkg --add-architecture i386 \
     && apt-get update \
-    && apt-get install --no-install-recommends autoconf automake \
+    && apt-get install -y --no-install-recommends autoconf automake \
        bash bison bzip2 diffutils file flex g++ gawk gcc-multilib \
        gettext gperf groff-base libncurses-dev libexpat1-dev libslang2 \
        libssl-dev libtool libxml-parser-perl make patch perl pkg-config python \
