@@ -12,7 +12,7 @@ RUN set -ex \
        gettext gperf groff-base libncurses-dev libexpat1-dev libslang2 \
        libssl-dev libtool libxml-parser-perl make patch perl pkg-config python \
        sed shtool tar texinfo unzip zlib1g zlib1g-dev lib32z1-dev lib32stdc++6 \
-       automake1.11 libelf-dev:i386 libelf1:i386 \
+       automake1.11 libelf-dev:i386 libelf1:i386 wget vim nano \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
