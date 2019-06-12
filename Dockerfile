@@ -8,7 +8,8 @@ RUN set -ex \
     && dpkg --add-architecture i386 \
     && apt-get update \
     && apt-get install --no-install-recommends -y \
-       ca-certificates wget git nano vim \
+       gettext build-essential autoconf libtool asciidoc \
+       automake ca-certificates wget git nano vim \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/* \
