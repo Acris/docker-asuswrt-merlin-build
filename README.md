@@ -20,3 +20,6 @@ docker exec -it asuswrt-merlin-build bash
 ```
 
 Then, you can compile your programs, don't forget mount your source code to container.
+
+# Samples
+https://gist.github.com/Acris/60abe3f1a17567a7986000745fbe2742
