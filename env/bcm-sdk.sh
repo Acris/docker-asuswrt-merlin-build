@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ASUSWRT_MERLIN_VERSION=384.11_2
+ASUSWRT_MERLIN_VERSION=384.12
 
 if [[ ! -d /home/asuswrt-merlin ]]; then
   cd /tmp
