@@ -11,10 +11,12 @@ docker exec -it asuswrt-merlin-build bash
 
 - Set environment variable for build:
 ```bash
+# Download asuswrt merlin.ng
+. /root/download.sh
 # For Broadcom SDK6/SDK7 ARM platform (RT-AC56 upto RT-AC5300)
-. /root/env/bcm-sdk.sh
+#. /root/env/bcm-sdk.sh
 # For Broadcom HND ARM platform (RT-AC86U)
-#. /root/env/bcm-hnd.sh
+. /root/env/bcm-hnd.sh
 # For Broadcom HND AX ARM (RT-AX88U)
 #. /root/env/bcm-hnd-802.11ax.sh
 ```
